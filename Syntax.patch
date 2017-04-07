@@ -1,0 +1,11 @@
+--- a/Syntax	2016-09-26 18:06:20.653030354 -0400
++++ b/Syntax	2016-09-26 18:06:37.506363190 -0400
+@@ -262,5 +262,8 @@
+ file .\*\\.pp$ Puppet\smanifest\sfile
+ include puppet.syntax
+ 
++file ..\*\\.rs$ Rust\sProgram
++include rust.syntax
++
+ file .\* unknown
+ include unknown.syntax

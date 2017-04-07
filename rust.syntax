@@ -1,0 +1,133 @@
+##################################################################################
+# Rust syntax - based on original cxx.syntax from mc 4.8                         #
+# Author: Leonardo Lang <leonardo lang AT gmail com/>                            #
+##################################################################################
+
+context default
+    keyword whole abstract yellow
+    keyword whole alignof yellow
+    keyword whole abstract yellow
+    keyword whole as yellow
+    keyword whole become yellow
+    keyword whole box yellow
+    keyword whole break yellow
+    keyword whole const yellow
+    keyword whole continue yellow
+    keyword whole crate yellow
+    keyword whole do yellow
+    keyword whole else yellow
+    keyword whole enum yellow
+    keyword whole extern yellow
+    keyword whole false yellow
+    keyword whole final yellow
+    keyword whole fn yellow
+    keyword whole for yellow
+    keyword whole if yellow
+    keyword whole impl yellow
+    keyword whole in yellow
+    keyword whole let yellow
+    keyword whole loop yellow
+    keyword whole macro yellow
+    keyword whole match yellow
+    keyword whole mod yellow
+    keyword whole move yellow
+    keyword whole mut yellow
+    keyword whole offsetof yellow
+    keyword whole override yellow
+    keyword whole priv yellow
+    keyword whole proc yellow
+    keyword whole pub yellow
+    keyword whole pure yellow
+    keyword whole ref yellow
+    keyword whole return yellow
+    keyword whole Self white
+    keyword whole self white
+    keyword whole sizeof yellow
+    keyword whole static yellow
+    keyword whole struct yellow
+    keyword whole super yellow
+    keyword whole trait yellow
+    keyword whole true yellow
+    keyword whole type yellow
+    keyword whole typeof yellow
+    keyword whole unsafe brightred
+    keyword whole unsigned yellow
+    keyword whole use yellow
+    keyword whole virtual yellow
+    keyword whole where yellow
+    keyword whole while yellow
+    keyword whole yield yellow
+
+    keyword /\* brown
+    keyword \*/ brown
+    keyword // brown
+
+    keyword whole panic! brightred
+
+    keyword \{ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz\}\[ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz\]! cyan
+
+    keyword & brightmagenta
+    keyword | brightmagenta
+
+    keyword '\\\{"abtnvfr\}' brightgreen
+    keyword '\\\{0123\}\{01234567\}\{01234567\}' brightgreen
+    keyword '\\'' brightgreen
+    keyword '\\\\' brightgreen
+    keyword '\\0' brightgreen
+    keyword '\{\s!"#$%&()\*\+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ\}' brightgreen
+
+    keyword -> yellow
+    keyword > yellow
+    keyword < yellow
+    keyword \+ yellow
+    keyword - yellow
+    keyword \* yellow
+    keyword / yellow
+    keyword % yellow
+    keyword = yellow
+    keyword != yellow
+    keyword == yellow
+    keyword { brightcyan
+    keyword } brightcyan
+    keyword ( brightcyan
+    keyword ) brightcyan
+    keyword [ brightcyan
+    keyword ] brightcyan
+    keyword , brightcyan
+    keyword : brightcyan
+    keyword ? brightcyan
+    keyword ; brightmagenta
+
+context exclusive /\* \*/ brown
+    spellcheck
+
+context exclusive // \n brown
+    spellcheck
+
+context " " green
+    spellcheck
+    keyword \\" brightgreen
+    keyword %% brightgreen
+    keyword %\[#0\s-\+,\]\[0123456789\*\]\[.\]\[0123456789\*\]\[L\]\{eEfgGoxX\} brightgreen
+    keyword %\[0\s-\+,\]\[0123456789\*\]\[.\]\[0123456789\*\]\[hl\]\{diuxX\} brightgreen
+    keyword %\[hl\]n brightgreen
+    keyword %\[-\]\[0123456789\*\]\[.\]\[0123456789\*\]s brightgreen
+    keyword %[*] brightgreen
+    keyword %c brightgreen
+    keyword %p brightgreen
+    keyword \\\{0123\}\{01234567\}\{01234567\} brightgreen
+    keyword \\\\ brightgreen
+    keyword \\' brightgreen
+    keyword \\\{abtnvfr\} brightgreen
+
+context exclusive macro_rules!\s \s red
+
+context #[ ] magenta
+    keyword /\**\*/ brown
+    keyword //*\n brown
+    keyword (*) brightmagenta
+
+context #![ ] magenta
+    keyword /\**\*/ brown
+    keyword //*\n brown
+    keyword (*) brightmagenta
